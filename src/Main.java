@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        EconomyRoom eco = new EconomyRoom(111);
+        EconomyRoom eco = new EconomyRoom(111, 3, false);
         StandardRoom std = new StandardRoom(222);
         LuxRoom lux = new LuxRoom(333);
         UltraLuxRoom ultra = new UltraLuxRoom(444);
