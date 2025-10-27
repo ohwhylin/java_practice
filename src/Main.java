@@ -30,7 +30,9 @@ public class Main {
         System.out.println();
 
         // задание 1.3
-        // проверка первой буквы и последней буквы (без учета регистра)
+        // проверка первой буквы и последней буквы (с учетом регистра)
+        // чтобы без учета регистра - привести все к заглавным буквам
+        // Predicate<String> beginJ = s -> s.toUpperCase().startsWith("J");
         Predicate<String> beginJ = s -> s.startsWith("J");
         Predicate<String> beginN = s -> s.startsWith("N");
         Predicate<String> endA = s -> s.endsWith("A");

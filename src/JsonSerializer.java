@@ -4,11 +4,11 @@ public final class JsonSerializer {
     public static String toJson (Object obj) {
         if (obj == null) return "null";
 
-        Class<?> cls = obj.getClass();
+        Class<?> clazz = obj.getClass();
         StringBuilder sb = new StringBuilder();
         sb.append("{");
-
-        Field[] fields = cls.getDeclaredFields();
+        
+        Field[] fields = clazz.getDeclaredFields();
         boolean first = true;
 
         for (Field f : fields) {
